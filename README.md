@@ -4,7 +4,7 @@
 
 ## 下載
 
-**[agent-class.zip](https://github.com/4-learn/nfu-agent-class/releases/latest/download/agent-class.zip)**：程式＋離線安裝檔（Windows、Python 3.14／3.15）。解壓縮到 `C:\agent-class`，照講義第 1 節操作。
+**[agent-class.zip](https://github.com/4-learn/nfu-agent-class/releases/latest/download/agent-class.zip)**：課程程式。解壓縮到 `C:\agent-class`，照講義第 1 節操作。
 
 ## 檔案
 
