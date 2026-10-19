@@ -16,7 +16,7 @@ from pathlib import Path
 from equipment import borrow, query_stock
 
 BASE_URL = "https://ai.nmking.io/v1"
-MODEL = os.environ.get("NMKING_MODEL", "gpt-6-luna")  # 實際使用點數池綁定的模型
+MODEL = os.environ.get("NMKING_MODEL", "gpt-5.6-luna")  # 點數池綁定的模型（2026-10-19 /v1/models 列出）
 MAX_STEPS = 3                                         # 最多問模型幾次，避免停不下來、燒光點數
 
 # 1. 工具清單：名字 → 函式
