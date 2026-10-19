@@ -19,7 +19,7 @@ else:
     ok = False
     print("Codex ❌ 還沒接上生生有 Token（第 1 節：執行 1-套用-NMKING-Codex.bat）")
 token = Path(__file__).with_name("token.txt")
-if token.exists() and token.read_text().strip():
+if token.exists() and token.read_text(encoding="utf-8-sig").strip():
     print("token.txt ✅")
 else:
     ok = False

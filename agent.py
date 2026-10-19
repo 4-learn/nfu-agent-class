@@ -67,7 +67,7 @@ def agent(question, ask_model):
 def real_model():
     from openai import OpenAI
     token_file = Path(__file__).with_name("token.txt")
-    token = os.environ.get("NMKING_TOKEN") or (token_file.read_text().strip() if token_file.exists() else "")
+    token = os.environ.get("NMKING_TOKEN") or (token_file.read_text(encoding="utf-8-sig").strip() if token_file.exists() else "")
     if not token:
         sys.exit("找不到 Token：請建立 token.txt，或改用 --replay")
     client = OpenAI(base_url=BASE_URL, api_key=token)
