@@ -1,4 +1,4 @@
-"""第 2 節：把第 1 節的函式變成 MCP 工具。
+"""第 2 節：把 equipment.py 的函式變成 MCP 工具。
 
     python server.py      （通常不用自己執行；client.py 或 Codex 會幫你啟動）
 """
