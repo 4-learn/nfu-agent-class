@@ -32,7 +32,7 @@ async def main():
         print("4. 借 10 個：", text(await client.call_tool("borrow", {"item": "示波器", "qty": 10, "student_id": "B11234567"})))
 
         wrong = await client.call_tool("borrow", {"item": "示波器", "qty": "很多", "student_id": "B11234567"})
-        print("5. qty 傳文字：", "被擋下" if wrong.is_error else "沒被擋", "－", text(wrong)[:60])
+        print("5. qty 傳文字：", "被 schema 擋下（qty 必須是整數）" if wrong.is_error else "沒被擋")
 
 
 asyncio.run(main())
